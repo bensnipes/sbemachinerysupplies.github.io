@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+
+    
+</head>
+<body>
+
+    <section  class="header-about">
+ 
+        <nav>
+
+            <!-- <a href="index.html"><img src="eduford_img/logo.png"></a> -->
+            <a href="index.html" style="text-decoration: none;"> <h1 style="color: rgb(91, 105, 231); font-size: 62px;">SBE</h1></a>
+
+            <div class="nav-links" id="navLinks">
+
+                
+                <i class="fa" onclick="hideMenu()"><img src="eduford_img/close.png"></i>
+
+                <ul>
+
+                    <li> <a href="index.html">HOME</a></li>
+                    <li> <a href="about.html">ABOUT</a></li>
+                    <li> <a href="service.html">SERVICES</a></li>
+                    <!-- <li> <a href="blog.html">BLOG</a></li> -->
+                    <li> <a href="contact.html">CONTACT</a></li>
+
+                </ul>
+
+                
+
+
+            </div>
+
+            <i class="fa" onclick="showMenu()"><img src="eduford_img/menu.png"></i>
+
+
+
+        </nav>
+
+        <div class="text-box-about">
+            <h1>Contact Us</h1>
+
+
+
+            
+        </div>
+
+
+    </section>
+
+
+    <!---------------------------------------------------Contact Page---------------------------------------------->
+
+
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.4392318033947!2d-0.13377738528617597!3d5.6494176959047815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf835e7964867b%3A0xfc441d3f686b4db6!2sE%20Legon%20-%20Trasacco%20Estate%20Rd!5e0!3m2!1sen!2sgh!4v1663424668320!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+
+    <section class="contact-details">
+
+        <div class="text-contact">
+
+
+
+            <div class="minor-text-contact">
+
+                <i> <img src="eduford_img/home.png"></i>
+
+                <h4>
+                    H378 Timbuktu ST 
+                </h4>
+
+                <h5>
+                    CX-100-4110, Accra-Ghana
+                </h5>
+
+
+            </div>
+
+
+
+            <div class="minor-text-contact">
+
+                <i> <img src="eduford_img/telephone-call.png"></i>
+
+                <h4>
+                    055-334-3462/024-328-7477
+                </h4>
+
+                <h5>
+                    Monday to Saturday 6:00AM GMT to 6:00 PM GMT
+                </h5>
+
+                
+            </div>
+
+
+
+            <div class="minor-text-contact">
+
+                <i> <img src="eduford_img/email.png"></i>
+
+                <h4>
+                    sbemachinerysupplies@gmail.com
+                </h4>
+
+                <h5>
+                    Email us your query
+                </h5>
+
+
+                
+            </div>
+
+
+
+        </div>
+
+
+        <div class="form-contact">
+
+            <div class="minor-form-contact">
+
+                <form action="form-handler.php" method="POST">
+                    
+                    <input type="text" name="name" placeholder="Enter your name">
+
+                    <input type="email" name="email" placeholder="Enter email address">
+
+                    <input type="text" name="subject" placeholder="Enter your subject">
+
+                    <textarea rows="10" placeholder="Message"></textarea>
+
+                    <button> Send Message</button>
+
+
+                </form>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+    <!------------------------------------------------------------About Us-------------------------------------------------------->
+
+
+    <section  class="about">
+
+        <div class="about-head">
+
+            About Us
+
+        </div>
+
+        <div class="about-content">
+
+            <p>
+
+                SBE Machinery & Supplies is an after-sales company for heavy duty equipment. 
+                We supply parts that meets OEMs standard and also provide technical services that maintains the 
+                general health of machines.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="about-icons">
+
+                <i>
+                    <img src="eduford_img/facebook-app-symbol.png">
+                </i>
+
+                <i>
+                    <img src="eduford_img/twitter.png">
+                </i>
+
+                <i>
+                    <img src="eduford_img/instagram.png">
+                </i>
+
+                <i>
+                    <img src="eduford_img/linkedin.png">
+                </i>
+
+
+        </div>
+
+
+        <div class="about-trademark">
+
+            By Ben
+            
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+    
+    <!-----------------JavaScript for Toggle Menu------------>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-202px";
+        }
+
+    </script>
+    
+</body>
+</html>

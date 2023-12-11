@@ -1,0 +1,1167 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(eduford_img/hitachi_excavator.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+.nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%); 
+}
+
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+.hero-btn {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    transition: 1s; 
+
+}
+
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+
+}
+
+
+nav .fa img{
+   display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 700px){
+    
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -202px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+    }
+
+    nav .fa img{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        width: 30px;
+        margin-top: 20px;
+    }
+
+    nav ul {
+        padding: 20px;
+    }
+
+
+    
+}
+
+
+
+/* ----------------Course Section ------------------*/
+
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.course-col {
+    flex-basis: 31%;
+    background: rgba(236, 133, 133, 0.2);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.6s;
+
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+@media screen and (max-width: 700px){
+    .row{
+        flex-direction: column;
+
+    }
+
+
+
+}
+
+
+
+
+
+/* --------------campus section --------------*/
+
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.campus-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.campus-col img {
+    width: 100%;
+    display: block;
+}
+
+.image-div{
+    height: 257px;
+}
+
+.image-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+
+.layer:hover {
+    background: rgba(226, 0, 0, 0.8);
+
+}
+
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+
+}
+
+
+
+/* ---------------Our facilities ------------*/
+
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+    
+}
+
+
+.facilities-img{
+    display: flex;
+    padding: 5%;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.facilities-img .campus-col img {
+    border-radius: 10px;
+}
+
+
+.library-text {
+    padding-top: 20px;
+}
+
+
+
+.library-text   h3 {
+    text-align: center;
+}
+
+
+
+
+.library-para {
+    text-align: left;
+}
+
+
+
+
+.library-para p {
+    text-align: center;
+    padding-left: 0;
+}
+
+
+@media screen and (max-width: 700px){
+    .facilities-img{
+        flex-direction: column;
+
+    }
+
+
+
+}
+
+
+
+
+/*-------------What Our Students Say ---------------*/
+
+.students {
+    width: 80%;
+    text-align: center;
+    padding-top: 50px;
+    margin: auto;
+}
+
+
+.student-comments {
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 15%;
+}
+
+
+.student-img-text {
+    display: flex;
+    position: relative;
+    
+}
+
+.student-img-text img {
+    width: 50px;
+    border-radius: 50%;
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-right: 3%;
+    background-size: cover;
+    position: relative;
+    
+}
+
+
+.student-img {
+    padding: 10px;
+}
+
+
+.student-img-text p {
+    padding-top: 2%;
+    text-align: left;
+    padding-left: 0;
+    font-size: 12px;
+}
+
+
+
+.student-text {
+    padding: 2%;
+    background: rgba(236, 133, 133, 0.2);
+    flex-basis: 45%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.student-text h3 {
+    text-align: left;
+    font-size: 13px;
+    
+    
+}
+
+.student-rating {
+    display: flex;
+    
+}
+
+
+.student-rating img {
+    width: 15px;
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 700px){
+    .student-comments{
+        flex-direction: column;
+        margin: 0;
+
+    }
+
+    .student-text {
+        margin-top: 20px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+/*----------------------------------Enroll Section --------------------------------------*/
+
+
+.enroll {
+    width: 80%;
+    min-height: 35vh;
+    margin: 100px auto;
+    text-align: center;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(eduford_img/hitachi_ex_snip.JPG);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+
+}
+
+
+.enroll-text {
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%); 
+    width: 50%;
+    font-size: 20px;
+}
+
+.enroll-text div {
+    padding-top: 3%;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+
+
+.enroll-contact a{
+    color: #fff;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    border: 1px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 9px;
+    text-decoration: none;
+    background-color: transparent;
+    transition: background-color 1s;
+
+}
+
+
+.enroll-contact:hover a {
+    background-color: #f44336;
+    border: 1px solid #f44336;
+
+}
+
+
+
+@media screen and (max-width: 700px){
+    .enroll{
+        flex-direction: column;
+        min-height: 70vh;
+    
+    }
+
+    .enroll-text{
+        width: 80%;
+    }
+
+    .enroll-long{
+        font-size: 30px;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+
+
+    .enroll-short{
+        font-size: 30px;
+    }
+
+    .enroll-text {
+        flex-direction: column;
+    }
+
+
+
+}
+
+
+
+
+
+/*-------------------------About Section------------------------------*/
+
+.about {
+    margin: 100px auto;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.about-head{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+.about-content {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.about-content p {
+    text-align: center;
+}
+
+
+
+
+
+
+.about-icons {
+    display: inline-block;
+    
+}
+
+
+.about-icons  i img {
+    width: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.about-trademark {
+    margin-top: 20px;
+    color: #777;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+
+@media screen and (max-width: 700px){
+    .about-content {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+/*----------------------------About Page Styling ---------------------------------------------*/
+.header-about {
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(eduford_img/hitachi_ex_snip.JPG);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-box-about {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%); 
+}
+
+
+.text-box-about h1 {
+    font-size: 32px;
+    
+
+
+}
+
+
+.about-description {
+    width: 80%;
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+
+.about-content {
+    flex-basis: 48%;
+    text-align: left;
+    font-family: sans-serif;
+    color: black;
+
+
+}
+
+
+.about-side-image {
+    flex-basis: 48%;
+
+}
+
+
+.about-side-image img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+
+
+.about-paragraph p {
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+.about-button {
+    border: 1px solid #f3b9b5;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    cursor:pointer;
+    background: transparent;
+    transition: 0.5s;
+}
+
+
+.about-button:hover {
+    border: 1px solid white;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    cursor:pointer;
+    background: #f44336;
+}
+
+
+
+.about-button a {
+    font-size: 10px;
+    font-weight: 600;
+    color: #f3b9b5;
+
+}
+
+
+
+
+@media screen and (max-width: 700px){
+    .about-description{
+        flex-direction: column;
+
+    }
+
+    .h1-content {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-box-about h1 {
+        font-size: 32px;
+    }
+
+    .about-description {
+        width: 80%;
+        margin: 80px auto;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .about-content {
+        margin-bottom: 50px;
+
+    }
+
+    .h1-content h1 {
+        font-size: 34px;
+    }
+
+
+}
+
+
+
+
+
+
+/*---------------------------------------------------Courses Page --------------------------------------------------*/
+
+/* Course section was a mere copy and paste from the index page */
+
+
+
+
+
+/*---------------------------------------------Blog-Page-------------------------------------------------------------*/
+
+.blog-section {
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    text-align: left;
+    
+}
+
+
+
+.main-blog-div {
+    text-align: left;
+    flex-basis: 65%;
+}
+
+
+
+.mini-blog-div {
+    flex-basis: 25%;
+    margin-left: 50px;
+
+}
+
+
+
+
+.blog-image {
+    margin-bottom: 30px;
+}
+
+
+
+
+.blog-image img {
+    width: 100%;
+    
+}
+
+
+
+
+.blog-headline h3 {
+    text-align: left;
+    font-weight: 700;
+}
+
+
+
+.blog-postgraduate-headline h3 {
+    border: 1px solid rgb(241, 98, 46);
+    font-size: 13px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background: rgb(241, 98, 46);
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.blog-paragraph {
+    margin-bottom: 60px;
+}
+
+
+
+.blog-paragraph p {
+    text-align: left;
+    padding-left: 0;
+}
+
+
+.blog-categories-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.list-A ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+
+.list-B ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+
+.blog-comment {
+    flex-direction: column;
+    border: 1px solid rgb(235, 233, 233);
+    width: 80%;
+    
+}
+
+
+.blog-comment div {
+    width: 95%;
+    
+}
+
+
+
+.comment-head h3{
+    text-align: left;
+    padding: 10px;
+    margin: auto;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+
+/*
+.comment-div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    width: 100%;
+
+} */
+
+
+.comment-div {
+    width: 100%;
+
+}
+
+
+.comment-div form {
+    margin-left: 20px;
+    margin-bottom: 40px;
+
+}
+
+
+
+.comment-div form input{
+    width: 100%;
+    border: 0px solid #777;
+    background: rgb(235, 233, 233);
+    padding: 10px;
+    font-size: 10px;
+    font-family: sans-serif;
+    border-radius: 3px;
+   
+
+}
+
+
+.comment-div form textarea{
+    width: 100%;
+    padding: 10px;
+    background: rgb(235, 233, 233);
+    font-size: 12px;
+    font-family: sans-serif;
+    border: 0px solid rgb(235, 233, 233);
+    border-radius: 4px;
+    
+}
+
+
+
+
+.comment-div-button {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    
+}
+
+.comment-div-button form button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 10px;
+    background: #fdf7f7;
+    border: 1px solid #ffc3bd;
+    color: #fa7f74;
+    transition: 1s;
+
+}
+
+
+
+.comment-div-button form  button:hover{
+    background: #f54141;
+    border: 1px solid #f56053;
+    color: white;
+    font-weight: 500;
+
+
+}
+
+
+@media screen and (max-width: 700px){
+    .blog-section{
+        flex-direction: column;
+
+    }
+
+    .blog-comment {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .mini-blog-div{
+        margin-left: 0;
+    }
+
+    .list-B ul li {
+        font-size: 13px;
+        font-family: sans-serif;
+    }
+
+    .list-A ul li {
+        font-size: 13px;
+        font-family: sans-serif;
+    }
+
+}
+
+
+
+
+
+/*----------------------------Contact Page Details ----------------------------------------*/
+
+
+
+.contact-details {
+    display: flex;
+    width: 80%;
+    margin: 100px auto;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+
+
+
+
+
+.text-contact {
+    flex-basis: 44%;
+    width: 100%;
+}
+
+
+
+
+.form-contact {
+
+    flex-basis: 44%;
+    
+    
+
+}
+
+
+.minor-text-contact h4 {
+    color: #777;
+}
+
+
+.minor-text-contact h5{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+
+
+.text-contact div{
+    margin: 50px;
+    margin-top: 15px;
+}
+
+
+
+
+.minor-form-contact form input{
+    padding: 20px;
+    margin: 10px;
+    width: 80%;
+    border: 1px solid rgb(235, 233, 233);
+    font-size: 10px;
+}
+
+
+.minor-form-contact form textarea{
+    margin: 10px;
+    width: 80%;
+    padding: 20px;
+    border: 1px solid rgb(235, 233, 233);
+    color: #777;
+    font-size: 13px;
+
+}
+
+
+.minor-form-contact form button {
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 10px;
+    background: #fdf7f7;
+    border: 1px solid #ffc3bd;
+    color: #fa7f74;
+    transition: 1s;
+    
+}
+
+
+.minor-form-contact form button:hover {
+    background: #eb3333;
+    color: white;
+
+}
+
+
+
+.minor-text-contact i img{
+    width: 20px;
+
+}
+
+
+.map {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0px;
+}
+
+
+.map iframe {
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 700px){
+    .contact-details{
+        flex-direction: column;
+
+    }
+
+    .text-contact div {
+        margin-left: 15px;
+    }
+
+    .minor-form-contact form input {
+        width: 80%;
+    }
+
+    .minor-form-contact form textarea{
+        width: 80%;
+    }
+}
+
+
+
